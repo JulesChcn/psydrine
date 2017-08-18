@@ -18,10 +18,29 @@
   // background-size: cover;
 }
 
+//** REPERES COULEURS SUR LES DIV **//
+#first-floor {
+  background-color: darkgrey;
+}
+
+#second-floor {
+  background: cornflowerblue;
+}
+
+#third-floor {
+  background-color: aliceblue;
+}
+
 // Img id # second-floor //
 
 #second-floor img {
   max-width: 100%;
+}
+
+//** A BOUGER **//
+
+.no-padding {
+    padding: 0 !important;
 }
 
 // .types img {
