@@ -4,18 +4,31 @@
 color: white;
 text-align: center;
 height: 92vh;
+
 /* if you have a 70px navbar => height: calc(100vh - 70px); */
 // background-size: cover !important;
 // display: flex;
 // align-items: center;
 // justify-content: center;
 // background-position: center;
-// // added effects for banner parallax
-// background-attachment: fixed;
-// background-position: center;
-// background-repeat: no-repeat;
-// background-size: cover;
+// added effects for banner parallax
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
+
+
+.parallax {
+  position: fixed;
+
+}
+
+.tenteparallax {
+position: fixed;
+top: -150px;
+}
+
 
 
 .types img {
@@ -23,16 +36,3 @@ height: 92vh;
   height: 100%;
 }
 
-.num3 {
-  background-color: yellow;
-}
-.num4 {
-  background-color: grey;
-}
-.num5 {
-  background-color: grey;
-}
-
-.num6 {
-  background-color: blue;
-}
