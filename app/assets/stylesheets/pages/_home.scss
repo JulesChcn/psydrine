@@ -20,28 +20,45 @@
 }
 
 //** REPERES COULEURS SUR LES DIV **//
-#first-floor {
+#the-parallax-one {
   background-color: darkgrey;
 }
 
-#second-floor {
-  background: cornflowerblue;
-}
-
-#third-floor {
+#the-parallax-two {
   background-color: aliceblue;
 }
 
-// Img id # second-floor //
-
-#second-floor img {
-  max-width: 100%;
+#the-number-four {
+  background: cornflowerblue;
+  img {
+    max-width: 100%;
+  }
 }
 
-//** A BOUGER **//
+#the-number-six {
+
+}
+
+#the-why {
+
+}
+// Img id # second-floor //
+
+// #the-number-four img {
+//   max-width: 100%;
+// }
+
+//** A BOUGER, VARIABLES BOOTSTRAP **//
 
 .no-padding {
     padding: 0 !important;
+}
+
+#my-row {
+    display: table;
+    height:20%;
+    width: 100%;
+    margin: 0;
 }
 
 // .types img {
