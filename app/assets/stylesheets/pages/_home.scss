@@ -13,18 +13,18 @@ body {
   text-align: center;
   height: calc(105vh - 30px) !important;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-   background-size: cover !important;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-position: center;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
     //added effects for banner parallax
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.banner-parallax-1 {
+  }
+  .banner-parallax-1 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('sunset-clouds.jpg');
     background-size: cover !important;
@@ -33,13 +33,13 @@ body {
     justify-content: center;
     background-position: center;
      //added effects for banner parallax
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-}
-.banner-parallax-2 {
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 40vh;
+   }
+   .banner-parallax-2 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('crabe.jpg');
     background-size: cover !important;
@@ -48,13 +48,13 @@ body {
     justify-content: center;
     background-position: center;
      //added effects for banner parallax
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-.banner-parallax-3 {
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 70vh;
+   }
+   .banner-parallax-3 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('beach-palmtrees.jpg');
     background-size: cover !important;
@@ -63,18 +63,18 @@ body {
     justify-content: center;
     background-position: center;
      //added effects for banner parallax
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+   }
+
+   .banner-parallax {
+
+    color: white;
+    text-align: center;
     height: 80vh;
-}
-
-.banner-parallax {
-
-  color: white;
-  text-align: center;
-  height: 80vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
    // background-size: cover !important;
    // display: flex;
@@ -86,7 +86,7 @@ body {
    // background-position: center;
    // background-repeat: no-repeat;
    // background-size: cover;
-}
+ }
 //** REPERES COULEURS SUR LES DIV **//
 #the-parallax-one {
   background-color: darkgrey;
@@ -105,7 +105,7 @@ body {
   }
 }
 .picture {
-   img {
+ img {
   border-radius: 5px;
   border: solid 2px pink;
   opacity: 0.95;
@@ -114,11 +114,11 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  }
-  img:hover {
-    opacity: 0;
-       transition-delay: 0.3s;
-  }
+}
+img:hover {
+  opacity: 0;
+  transition-delay: 0.3s;
+}
 }
 
 .picture-text {
@@ -131,19 +131,19 @@ body {
   position: absolute;
   top: 10px;
   left: 35px;
-  }
+}
 
- .picture-text p {
+.picture-text p {
   position: absolute;
   top: 40px;
   left: 35px;
-  }
+}
 
 .picture-text:hover {
   background-color: white;
   opacity: 1;
-   transition-delay: 0.3s;
-   border-radius: 5px;
+  transition-delay: 0.3s;
+  border-radius: 5px;
   border: solid 2px pink;
 }
 
@@ -168,23 +168,23 @@ body {
 //** A BOUGER, VARIABLES BOOTSTRAP **//
 
 .why {
-   background: darksalmon;
-   padding: 8px;
-   border-radius: 5px;
-   margin: 5px;
+ background: darksalmon;
+ padding: 8px;
+ border-radius: 5px;
+ margin: 5px;
 }
 
 .no-padding {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 
 
 #my-row {
-    display: table;
-    height:20%;
-    width: 100%;
-    margin: 0;
+  display: table;
+  height:20%;
+  width: 100%;
+  margin: 0;
 }
 
 .description {

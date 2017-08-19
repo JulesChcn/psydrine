@@ -2,22 +2,22 @@
 
 
 .title {
-float: left;
-animation-delay: 2s;
+  float: left;
+  animation-delay: 2s;
 }
 
 .slideRight{
 
-    animation-name: slideRight;
-    -webkit-animation-name: slideRight;
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
 
-    animation-duration: 10s;
-    -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
 
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 
-    visibility: visible !important;
+  visibility: visible !important;
 }
 
 @keyframes slideRight {
@@ -53,8 +53,8 @@ animation-delay: 2s;
   display: flex;
   align-items: center;
   justify-content: space-between;
-   // position: fixed;
-   // width: 100vw;
+  position: fixed;
+  width: 100vw;
 }
 
 /* Logo */
