@@ -7,18 +7,34 @@
   text-align: center;
   height: calc(100vh - 70px) !important;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  // background-size: cover !important;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // background-position: center;
-  // // added effects for banner parallax
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+   background-size: cover !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-position: center;
+    //added effects for banner parallax
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
+.banner-parallax {
 
+  color: white;
+  text-align: center;
+  height: 80vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+   // background-size: cover !important;
+   // display: flex;
+   // align-items: center;
+   // justify-content: center;
+   // background-position: center;
+   //  //added effects for banner parallax
+   // background-attachment: fixed;
+   // background-position: center;
+   // background-repeat: no-repeat;
+   // background-size: cover;
+}
 //** REPERES COULEURS SUR LES DIV **//
 #the-parallax-one {
   background-color: darkgrey;
@@ -31,18 +47,19 @@
 }
 
 #the-number-four {
-  background: cornflowerblue;
+  background: rgba(280, 280, 280, 0.8);
   img {
     max-width: 100%;
   }
 }
 
 #my-name-is {
-  background-color: #dcbbbb;
+  background-color: rgba(280, 280, 280, 0.8);
 }
 
 #the-why {
-  background: darksalmon;
+
+  position: relative;
 }
 // Img id # second-floor //
 
@@ -52,15 +69,29 @@
 
 //** A BOUGER, VARIABLES BOOTSTRAP **//
 
+.why {
+   background: darksalmon;
+   padding: 8px;
+   border-radius: 5px;
+}
+
 .no-padding {
     padding: 0 !important;
 }
+
+
 
 #my-row {
     display: table;
     height:20%;
     width: 100%;
     margin: 0;
+}
+
+.description {
+  background-color: pink;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 // .types img {
