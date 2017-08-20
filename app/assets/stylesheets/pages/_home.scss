@@ -8,10 +8,10 @@ body {
 }
 // Banner Style //
 .banner {
-  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('living-room.jpg');
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('banner2.jpg');
   color: white;
   text-align: center;
-  height: calc(100vh - 70px) !important;
+  height: calc(105vh - 30px) !important;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -37,7 +37,7 @@ body {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     height: 40vh;
+     height: 95vh;
    }
    .banner-parallax-2 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
@@ -148,7 +148,22 @@ img:hover {
 }
 
 .texte-sandrine {
-  padding: 15px;
+  padding-top: 25px;
+  padding-right: 45px;
+  padding-left: 25px;
+  padding-bottom: 45px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px #888888;
+  opacity: 0.65;
+}
+
+.texte-sandrine:hover {
+  background-color: pink;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px #888888;
+  opacity: 0.9;
 }
 
 #my-name-is {
