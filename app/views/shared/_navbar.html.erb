@@ -2,59 +2,58 @@
   <!-- Logo -->
 <!--   <%= link_to root_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "logo 2.png" %>
-  <% end %> -->
+    <% end %> -->
 
-  <h2 class="slideRight">Sandrine Loiret</h2>
+    <h2 class="slideRight">Sandrine Loiret</h2>
 
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <% if user_signed_in? %>
+    <!-- Right Navigation -->
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+
 
       <!-- Links when logged in -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <!-- Login link (when logged out) -->
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    <% else %>
-      <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <% end %>
-  </div>
+          <%= image_tag "logo 2.png", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <div class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <div class="banner-4">
+             <h3>Step-by-step course</h3>
+           </div>
+           <div class="row black">
 
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
-    </div>
+            <div class="col-md-6"><h4 class="text-center">Take lessons</h4><i class="fa fa-book fa-2x" aria-hidden="true"> </i></div>
+            <div class="col-md-6"><h4 class="text-center">Dowload courses</h4><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+            <div class="col-md-6"><h4 class="text-center">Super truc</h4><i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i></div>
+            <div class="col-md-6"><h4 class="text-center">encore super</h4><i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i></div>
+          </div>
+          <div class="banner-5">
+           <h3>Step-by-step course</h3>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+ </div>
+
+ <!-- Dropdown list appearing on mobile only -->
+ <div class="navbar-wagon-item hidden-md hidden-lg">
+  <div class="dropdown">
+    <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+    <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+      <li><a href="#">Some mobile link</a></li>
+      <li><a href="#">Other one</a></li>
+      <li><a href="#">Other one</a></li>
+    </ul>
   </div>
+</div>
 </div>
 
