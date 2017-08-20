@@ -19,11 +19,18 @@ body {
   justify-content: center;
   background-position: center;
     //added effects for banner parallax
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.banner-content a {
+  position: relative;
+  top: 60px;
+
+}
+
   .banner-parallax-1 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(12, 15, 15, 0.7) 70%); background: url('sunset-clouds.jpg');
@@ -147,6 +154,7 @@ img:hover {
   border: solid 2px pink;
 }
 
+
 .texte-sandrine {
   padding-top: 25px;
   padding-right: 45px;
@@ -155,7 +163,7 @@ img:hover {
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 2px #888888;
-  opacity: 0.65;
+  opacity: 0.9;
 }
 
 .texte-sandrine:hover {
