@@ -4,7 +4,8 @@
     <%= image_tag "logo 2.png" %>
     <% end %> -->
 
-    <h2 class="slideRight">Sandrine Loiret</h2>
+    <h3 class="slideRight"> <strong>Sandrine Loiret</strong>  <br> Coach</h3>
+
 
 
     <!-- Right Navigation -->
@@ -13,12 +14,13 @@
 
 
       <!-- Links when logged in -->
-      <%= link_to "Sandrine", "#sandrine-text", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Cours", "#height-floor", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Photos", "#seventh-floor", class: "navbar-wagon-item navbar-wagon-link" %>
-       <%= link_to "Contact", "pages#contact", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", "#sandrine-text", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Start now?", "#height-floor", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Coaching", "#seventh-floor", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "e-book", "pages#contact", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Search", "pages#contact", class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- Login link (when logged out) -->
- <!--      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %> -->
+      <!--      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %> -->
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
@@ -37,25 +39,25 @@
             <div class="col-md-6"><h4 class="text-center">Infos supp</h4><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
           </div>
           <div class="banner-5">
-          <h3>Close</h3>
-         </div>
-       </div>
-     </div>
-   </div>
+            <h3>Close</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
- </div>
-
- <!-- Dropdown list appearing on mobile only -->
- <div class="navbar-wagon-item hidden-md hidden-lg">
-  <div class="dropdown">
-    <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-    <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-      <li><a href="#">Some mobile link</a></li>
-      <li><a href="#">Other one</a></li>
-      <li><a href="#">Other one</a></li>
-    </ul>
   </div>
-</div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
