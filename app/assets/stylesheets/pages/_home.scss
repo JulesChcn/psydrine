@@ -229,10 +229,15 @@ img:hover {
 //** A BOUGER, VARIABLES BOOTSTRAP **//
 
 .why {
- background: darksalmon;
+ background-color: rgba(78, 32, 55, 0.82);
  padding: 8px;
- border-radius: 5px;
- margin: 5px;
+  min-height: 100vh;
+  display: flex;
+    align-items: center;
+    // justify-content: center;
+    background-position: center;
+ // border-radius: 5px;
+ // margin: 5px;
 }
 
 .no-padding {
@@ -252,5 +257,12 @@ img:hover {
   padding: 10px;
   margin: 10px;
 }
-
-
+.newclass {
+  // background-color: rgb(247, 226, 227);
+  color: white;
+  border-radius: 1px;
+  border: solid 2px grey;
+  // box-shadow: 3px 3px 2px grey;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
