@@ -358,7 +358,7 @@ bottom: 60px;
 --------------------------------*/
 .section-title {
   font-size: 32px;
-  color: #111;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -380,18 +380,18 @@ bottom: 60px;
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
-  background: #f6f6f6;
+  background: $mauve;
   padding: 80px 0;
 
   .profile {
     text-align: center;
 
     .pic {
-      border-radius:50%;
-      border:6px solid #fff;
+      border-radius:2%;
+      // border:6px solid #fff;
       margin-bottom: 15px;
       overflow: hidden;
-      height: 260px;
+      height: auto;
       width: 260px;
 
       img {
@@ -407,10 +407,11 @@ bottom: 60px;
     }
 
     span {
-      color: $heading-color;
+      color: $gris;
     }
 
   }
+
 
   .quote {
     position:relative;
@@ -420,6 +421,7 @@ bottom: 60px;
     font-size: 16px;
     font-style: italic;
     border-radius: 5px;
+      color: $gris;
 
     b {
       display: inline-block;
