@@ -29,6 +29,14 @@ body {
 
 }
 
+.btn-info {
+  background-color: $mauve !important;
+  border: $mauve !important;
+}
+.btn-primary {
+  background-color: $rose !important;
+  border: $rose !important;
+}
 .row-black {
  // background-color: black;
  // height: 1vh;
@@ -261,30 +269,12 @@ img:hover {
   // background-color: rgb(247, 226, 227);
   color: white;
   border-radius: 1px;
-  border: solid 2px grey;
+  border: solid 1px $rose;
   // box-shadow: 3px 3px 2px grey;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.testimon {
-  background-color: grey;
-  height: 50vh;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  display: flex;
-    align-items: center;
-    // justify-content: center;
-    background-position: center;
- // border-radius: 5px;
- // margin: 5px;
-}
 
-.photo-testimon {
-
-}
-.text-testimon {
-border: solid 12px pink;
-}
 
 
 
