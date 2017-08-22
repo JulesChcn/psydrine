@@ -44,7 +44,7 @@ body {
   .banner-parallax-1 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
 
-    background-image: linear-gradient(-225deg, rgba(211, 193, 228, 0.18) 20%, rgba(73, 90, 90, 0.55) 70%), url(bridge2.jpg);    background-size: cover !important;
+    background-image: linear-gradient(-225deg, rgba(211, 193, 228, 0.18) 20%, rgba(73, 90, 90, 0.55) 70%), url(welcome.jpg);    background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +174,8 @@ img:hover {
   padding-left: 25px;
   padding-bottom: 45px;
   color: white;
+  position: relative;
+  bottom: 200px;
   // background-color: white;
   // border-radius: 10px;
   // box-shadow: 3px 3px 2px #888888;
@@ -187,26 +189,102 @@ img:hover {
   // box-shadow: 3px 3px 2px #888888;
   // opacity: 0.9;
 }
-
+// texte sandrine et cadre photo
 .texte-sandrine-2 {
   padding-top: 25px;
   padding-right: 45px;
   padding-left: 25px;
   padding-bottom: 45px;
   color: white;
+  height: 304px;
   // background-color: white;
   // border-radius: 10px;
   // box-shadow: 3px 3px 2px #888888;
   opacity: 0.9;
+  border: 1px solid $sable;
+}
+.photo-cadre-1 {
+  background-color: $mauve;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(fruit-salad.jpg);
+  background-size: cover !important;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-position: center;
+  height: 150px;
+  opacity: 0.7;
+
 }
 
+.photo-cadre-2 {
+  background-color: $mauve;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(sandrine-on-a-frog.jpg);
+  background-size: cover !important;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-position: center;
+  height: 150px;
+  opacity: 0.7;
+
+}
+
+.photo-cadre-3 {
+  background-color: $mauve;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(sandrine-yoga-on-rocks.jpg);
+  background-size: cover !important;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-position: center;
+  height: 150px;
+  opacity: 0.7;
+
+
+}
+
+.photo-cadre-4 {
+  background-color: $mauve;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(sandrine-and-friends.jpg);
+  background-size: cover !important;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-position: center;
+  height: 150px;
+  opacity: 0.7;
+
+}
+
+.unpad-1 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+ border: 1px solid $sable;
+ }
+.unpad-2 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+border: 1px solid $sable;
+}
+.unpad-3 {
+  padding-right: 0px !important;
+  position: relative;
+  bottom: 60px;
+
+ }
+.unpad-4 {
+  padding-left: 0px !important;
+  padding-right: 15px !important;
+position: relative;
+bottom: 60px;
+}
 .black-it {
   background-color: black;
 }
 
 .transpa {
   background-color: transparent;
-      background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(welcome.jpg);
+      background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), url(bridge2.jpg);
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -274,9 +352,4 @@ img:hover {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-
-
-
-
-
 
