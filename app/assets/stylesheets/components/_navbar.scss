@@ -8,6 +8,7 @@
 
 .slideRight{
 
+  margin-bottom: 0px !important;
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
 
@@ -39,9 +40,6 @@
     -webkit-transform: translateX(0%);
   }
 }
-
-
-
 
 
 .navbar-wagon {
