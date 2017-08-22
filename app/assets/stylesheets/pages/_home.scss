@@ -78,7 +78,7 @@ body {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     height: 40vh;
+     height: 100vh;
      color: white;
    }
 
@@ -255,7 +255,7 @@ img:hover {
   background-color: pink;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  // margin: 10px;
 }
 .newclass {
   // background-color: rgb(247, 226, 227);
@@ -266,3 +266,27 @@ img:hover {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+.testimon {
+  background-color: grey;
+  height: 50vh;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+    align-items: center;
+    // justify-content: center;
+    background-position: center;
+ // border-radius: 5px;
+ // margin: 5px;
+}
+
+.photo-testimon {
+
+}
+.text-testimon {
+border: solid 12px pink;
+}
+
+
+
+
+

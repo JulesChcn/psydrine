@@ -4,7 +4,7 @@
     <%= image_tag "logo 2.png" %>
     <% end %> -->
 
-    <h3 class="slideRight"> <strong>Sandrine Loiret</strong>  <br> Coach</h3>
+    <h1 class="slideRight"> <%= link_to "Sandrine Loiret", "home", class: "navbar-wagon-item navbar-wagon-link" %></h1>
 
 
 
@@ -14,11 +14,10 @@
 
 
       <!-- Links when logged in -->
-      <%= link_to "About", "#sandrine-text", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Start now?", "#height-floor", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Coaching", "#seventh-floor", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "e-book", "pages#contact", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Search", "pages#contact", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", "about", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Start now?", "start_now", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Coaching", "coaching", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "e-book", "ebook", class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- Login link (when logged out) -->
       <!--      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %> -->
 
