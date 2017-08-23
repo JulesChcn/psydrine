@@ -1,5 +1,11 @@
+<div class="">
 <div class="container">
   <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+   <br>
+    <br>
+    <br>
+    <br>
+    <br> <%= link_to "New Article", new_path(@post), class: "btn btn-primary" %>
     <% @posts.each do |post| %>
     <div class="col-xs-12 text-center">
       <div class="text-center">
@@ -18,5 +24,7 @@
       <hr />
     </div>
     <% end %>
+  <%= link_to "New Article", new_path(@post), class: "btn btn-primary" %>
   </div>
+</div>
 </div>

@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
   skip_before_action :authenticate_user!, only: [:index, :edit, :new, :show, :create, :update, :delete]
   before_action :find_post, only: [:edit, :update, :show, :delete]
 
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new
     if @post.save(post_params)
+      @post.update_attributes(post_params)
       flash[:notice] = "Successfully created post!"
       redirect_to post_path(@post)
     else
@@ -32,7 +34,7 @@ class PostsController < ApplicationController
   def update
     if @post.update_attributes(post_params)
       flash[:notice] = "Successfully updated post!"
-      redirect_to post_path(@posts)
+      redirect_to post_path(@post)
     else
       flash[:alert] = "Error updating post!"
       render :edit
@@ -53,8 +55,6 @@ class PostsController < ApplicationController
     end
   end
 
-  private
-
   def post_params
     params.require(:post).permit(:title, :body)
   end
@@ -62,4 +62,6 @@ class PostsController < ApplicationController
   def find_post
     @post = Post.find(params[:id])
   end
+  private
+
 end
