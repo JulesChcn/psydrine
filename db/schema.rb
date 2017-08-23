@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170823133615) do
     t.datetime "updated_at", null: false
     t.index ["type"], name: "index_ckeditor_assets_on_type"
   end
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "body"

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :edit, :new, :show]
+  skip_before_action :authenticate_user!, only: [:index, :edit, :new, :show, :create, :update]
   before_action :find_post, only: [:edit, :update, :show, :delete]
 
   # Index action to render all posts
@@ -53,8 +53,6 @@ class PostsController < ApplicationController
     end
   end
 
-  private
-
   def post_params
     params.require(:post).permit(:title, :body)
   end
@@ -62,4 +60,6 @@ class PostsController < ApplicationController
   def find_post
     @post = Post.find(params[:id])
   end
+  private
+
 end
