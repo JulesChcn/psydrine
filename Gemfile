@@ -3,7 +3,7 @@ ruby '2.3.3'
 
 gem 'devise'
 gem 'figaro'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.3'
