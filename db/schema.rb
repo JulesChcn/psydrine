@@ -11,7 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170823103414) do
+=======
+ActiveRecord::Schema.define(version: 20170823133615) do
+>>>>>>> master
 =======
 ActiveRecord::Schema.define(version: 20170823133615) do
 >>>>>>> master
@@ -20,7 +24,10 @@ ActiveRecord::Schema.define(version: 20170823133615) do
   enable_extension "plpgsql"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   create_table "ckeditor_assets", id: :serial, force: :cascade do |t|
     t.string "data_file_name", null: false
     t.string "data_content_type"
@@ -32,7 +39,10 @@ ActiveRecord::Schema.define(version: 20170823133615) do
     t.datetime "updated_at", null: false
     t.index ["type"], name: "index_ckeditor_assets_on_type"
   end
+<<<<<<< HEAD
 
+>>>>>>> master
+=======
 >>>>>>> master
   create_table "posts", force: :cascade do |t|
     t.string "title"
