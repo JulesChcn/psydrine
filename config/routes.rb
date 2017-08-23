@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   get 'ebook', to: 'pages#ebook'
   get 'start_now', to: 'pages#start_now'
   get 'coaching', to: 'pages#coaching'
-  get 'posts', to: 'posts#index'
+  get 'index', to: 'posts#index'
+  get 'new', to: 'posts#new'
+  get 'edit', to: 'posts#edit'
+  get 'show', to: 'posts#show'
 
   # root to: "posts#index"
   # resources :posts
