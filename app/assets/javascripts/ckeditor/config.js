@@ -6,27 +6,31 @@ CKEDITOR.editorConfig = function(config) {
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
   config.filebrowserImageUploadUrl = "/ckeditor/pictures";
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
+  config.entities = false;
+  config.entities_greek = false;
+  config.entities_latin = false;
+  config.entities_processNumerical = false;
 
   config.toolbar_Pure = [
-    '/', {
-      name: 'basicstyles',
-      items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']
-    }, {
-      name: 'paragraph',
-      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl']
-    }, {
-      name: 'links',
-      items: ['Link', 'Unlink']
-    }, '/', {
-      name: 'styles',
-      items: ['Styles', 'Format', 'Font', 'FontSize']
-    }, {
-      name: 'colors',
-      items: ['TextColor', 'BGColor']
-    }, {
-      name: 'insert',
-      items: ['Image', 'Table', 'HorizontalRule', 'PageBreak']
-    }
+  '/', {
+    name: 'basicstyles',
+    items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']
+  }, {
+    name: 'paragraph',
+    items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl']
+  }, {
+    name: 'links',
+    items: ['Link', 'Unlink']
+  }, '/', {
+    name: 'styles',
+    items: ['Styles', 'Format', 'Font', 'FontSize']
+  }, {
+    name: 'colors',
+    items: ['TextColor', 'BGColor']
+  }, {
+    name: 'insert',
+    items: ['Image', 'Table', 'HorizontalRule', 'PageBreak']
+  }
   ];
   config.toolbar = 'Pure';
   return true;
