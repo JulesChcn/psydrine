@@ -9,13 +9,17 @@ gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
 
-# gem 'autoprefixer-rails'
+gem 'carrierwave', '~> 1.0'
+#blog
+gem 'ckeditor', '~> 4.1'
+
+gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
-# gem 'uglifier'
+gem 'uglifier'
 
 group :development, :test do
   gem 'pry-byebug'
@@ -25,3 +29,4 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
