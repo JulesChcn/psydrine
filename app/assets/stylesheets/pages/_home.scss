@@ -196,13 +196,28 @@ img:hover {
   padding-left: 25px;
   padding-bottom: 45px;
   color: white;
-  min-height: 55vh;
-  // background-color: white;
-  // border-radius: 10px;
-  // box-shadow: 3px 3px 2px #888888;
-  opacity: 0.9;
-  border: 1px solid $sable;
+  position: relative;
+  top: 700px;
+  z-index: 5;
+  cursor: pointer
+  // border: 1px solid $sable;
 }
+
+// .texte-sandrine-2:hover {
+//   min-height: 55vh;
+//   // background-color: white;
+//   // border-radius: 10px;
+//   // box-shadow: 3px 3px 2px #888888;
+//   opacity: 0.9;
+// }
+
+
+
+
+
+
+
+
 .photo-cadre-1 {
   background-color: $mauve;
   background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), image-url('fruit-salad.jpg');
@@ -214,6 +229,9 @@ img:hover {
   height: 150px;
   opacity: 0.7;
 
+}
+.photo-cadre-1:hover {
+  opacity: 1
 }
 
 .photo-cadre-2 {
@@ -297,6 +315,128 @@ bottom: 60px;
      background-size: cover;
      min-height: 100vh;
 }
+
+.quadrado {
+
+}
+
+.texte-sandrine-3 {
+  // padding-top: 25px;
+  // padding-right: 45px;
+  // padding-left: 25px;
+  // padding-bottom: 45px;
+  position: relative;
+  top: 400px;
+  left: 200px;
+  color: white;
+  // background-color: white;
+  // border-radius: 10px;
+  // box-shadow: 3px 3px 2px #888888;
+  opacity: 1;
+  // border: 1px solid $sable;
+  z-index: 4;
+}
+
+.case-1 {
+  position: relative;
+  right: 15px;
+  padding-top: 10px;
+  height: 50vh;
+  width: 50vw;
+  background-color: $mauve;
+    cursor: pointer;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('relation2.jpg');
+  color: white;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+      h4 {
+    padding: 50px;
+    opacity: 0;
+  }
+   h4:hover {
+    opacity: 0.7;
+  }
+}
+.case-2 {
+   position: relative;
+  right: 15px;
+  padding-top: 10px;
+  height: 50vh;
+  width: 50vw;
+  background-color: $mauve;
+    cursor: pointer;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('body-health1.jpg');
+  color: white;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+         h4 {
+    padding: 50px;
+    opacity: 0;
+  }
+   h4:hover {
+    opacity: 0.7;
+  }
+}
+.case-3 {
+   position: relative;
+  right: 15px;
+  padding-top: 10px;
+  height: 50vh;
+  width: 50vw;
+  background-color: $mauve;
+    cursor: pointer;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('nutrition.jpg');
+  color: white;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+         h4 {
+    padding: 50px;
+    opacity: 0;
+  }
+   h4:hover {
+    opacity: 0.7;
+  }
+}
+.case-4 {
+   position: relative;
+  right: 15px;
+  padding-top: 10px;
+  height: 50vh;
+  width: 50vw;
+  background-color: $mauve;
+    cursor: pointer;
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('self-esteem.jpg');
+  color: white;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+         h4 {
+    padding: 50px;
+    opacity: 0;
+  }
+   h4:hover {
+    opacity: 0.7;
+  }
+}
+
+// .case:hover {
+//   opacity: 1;
+//   transition-delay: 0.3s;
+// }
+
+
+
 
 #my-name-is {
   background-color: rgba(280, 280, 280, 0.8);
