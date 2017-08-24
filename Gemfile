@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
 
+gem 'carrierwave', '~> 1.0'
 #blog
 gem 'ckeditor', '~> 4.1'
 
