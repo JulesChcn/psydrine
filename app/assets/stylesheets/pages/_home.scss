@@ -2,6 +2,13 @@
 body {
   background-color: black;
 }
+.menu-bar-fix {
+  position: fixed;
+  top: 21px;
+  right: 50px;
+  color: white;
+  opacity: 0.7;
+}
 
 // Banner Style //
 .banner {
