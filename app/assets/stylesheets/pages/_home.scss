@@ -37,13 +37,33 @@ body {
 }
 
 .btn-info {
-  background-color: $mauve !important;
-  border: $mauve !important;
-}
-.btn-primary {
-  background-color: $rose !important;
+  background-color: transparent !important;
   border: $rose !important;
 }
+.btn-info:hover {
+  background-color: $rose !important;
+  border: $mauve !important;
+}
+
+.btn-primary {
+  background-color: $bleu !important;
+  border: $rose !important;
+}
+.btn-primary:hover {
+  background-color: $mauve !important;
+  border: $rose !important;
+}
+
+.btn-success {
+  background-color: $mauve !important;
+  border: $rose !important;
+}
+.btn-success:hover {
+  background-color: $rose !important;
+  border: $mauve !important;
+}
+
+
 .row-black {
  // background-color: black;
  // height: 1vh;
@@ -317,9 +337,9 @@ bottom: 60px;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     min-height: 80vh;
+     min-height: 70vh;
      color: white;
-     padding: 50px;
+     padding: 100px 50px;
 }
 
 .quadrado {

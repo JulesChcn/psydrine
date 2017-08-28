@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:edit, :update, :show, :delete]
-   skip_before_action :authenticate_user!, only: [:index, :edit, :create, :update, :new, :show, :_form]
+   skip_before_action :authenticate_user!, only: [:index, :edit, :create, :update, :new, :show]
   # Index action to render all posts
   def index
     @posts = Post.all
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
   def update
     if @post.update_attributes(post_params)
       flash[:notice] = "Successfully updated post!"
-      redirect_to post_path(@posts)
+      redirect_to post_path(@post)
     else
       flash[:alert] = "Error updating post!"
       render :edit

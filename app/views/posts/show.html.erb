@@ -1,5 +1,17 @@
-<div class="col-sm-8 col-sm-offset-2 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-  <div><%= raw @post.body %></div>
+<div class="transpa">
+  <div class="row">
+  <div class="col-sm-8 col-md-offset-2 col-xs-12 blog-content">
+  <h5 class="text-right"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+      <h2 class="text-center"><%= @post.title %>  </h3>
+
+      <div><%= raw @post.body %></div>
+    </div>
+
+    <div class="col-md-3 col-md-offset-2">
+    <br>
+    <br>
+    <br>
+     <%= link_to "Retour", "../posts", class: "btn btn-warning" %>
+   </div>
+ </div>
 </div>
