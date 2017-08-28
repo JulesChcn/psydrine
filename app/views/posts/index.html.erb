@@ -1,42 +1,52 @@
-<div class="sea">
-  <div class="row">
-   <div class="col-xs-12">
-<h2>Bienvenue dans mon Blog!</h2>
-     <%= link_to "New", new_post_path(@post), class: "btn btn-success" %>
-   </div>
-   <div class="">
-    <!-- Login text link -->
-     <% if user_signed_in? %>
-  <%= link_to destroy_user_session_path, method: :delete do %>
-     <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Déconnexion") %>
-     <% end %>
-  <% else %>
-    <%= link_to t(".sign_in", default: "Se connecter"), user_session_path, class: "btn btn-info " %>
-    <% end   %>
-
-    <!-- Button (call-to-action) -->
-
-  </div>
-   <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-    <% @posts.each do |post| %>
-    <div class="col-xs-12">
-    <div class="texte-sandrine-4">
-        <div class="text-center">
-          <h2><%= post.title %></h2>
-          <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
+<header class="sea">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Le coin des lecteurs</h1>
+          <span class="subheading">Bienvenue dans mon blog</span>
         </div>
-        <div>
-          <%= raw(post.body).truncate(358) %>
-        </div>
-      <div class="text-center">
-        <%= link_to "READ MORE", post_path(post), class: "btn btn-info" %>
-        <%= link_to "Edit", edit_post_path(post), class: "btn btn-primary" %>
       </div>
-      </div>
-      <br>
     </div>
-    <% end %>
   </div>
-</div>
-</div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <%= link_to "Nouveau blog", new_post_path(@post), class: "btn btn-success btn-lg" %>
+
+      <div class="post-preview">
+        <a >
+          <% @posts.each do |post| %>
+          <h2 class="post-title"><%= post.title %></h2>
+
+        </a>
+
+        <div>
+          <h3 class="post-subtitle">
+            <%= raw(post.body).truncate(158) %>
+          </h3>
+        </div>
+        <p class="post-meta">Posted by
+          <a href="#">Sandrine Loiret</a>
+          on <%= post.created_at.strftime('%b %d, %Y') %> </p>
+
+          <%= link_to "READ MORE", post_path(post), class: "btn btn-info" %>
+          <%= link_to "Edit", edit_post_path(post), class: "btn btn-info" %>
+
+
+          <br>
+
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
 

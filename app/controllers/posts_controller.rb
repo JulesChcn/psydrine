@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-   # skip_before_action :authenticate_user!, only: [:index :edit, :create, :update, :new, :show]
   before_action :find_post, only: [:edit, :update, :show, :delete]
+   skip_before_action :authenticate_user!, only: [:index, :show]
   # Index action to render all posts
   def index
     @posts = Post.all

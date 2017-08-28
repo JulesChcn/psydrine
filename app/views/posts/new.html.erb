@@ -1,4 +1,11 @@
 <div class="blind">
+  <% if user_signed_in? %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+     <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Déconnexion") %>
+     <% end %>
+  <% else %>
+     <i class="fa fa-sign-in"></i> <%= link_to t(".sign_in", default: "Se connecter"), user_session_path, class: "btn btn-info " %>
+    <% end   %>
 
 <h2>Ecrivez un nouveau texte!</h2>
 
