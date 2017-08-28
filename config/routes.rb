@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   get 'ebook', to: 'pages#ebook'
   get 'start_now', to: 'pages#start_now'
   get 'coaching', to: 'pages#coaching'
-  get 'index', to: 'pages#index' #blog access
+  # get 'index', to: 'pages#index' #blog access
+
+  root to: "posts#index"
+
+  resources :posts
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
