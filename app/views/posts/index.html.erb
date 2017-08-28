@@ -7,6 +7,7 @@
           <span class="subheading">Bienvenue dans mon blog</span>
         </div>
       </div>
+      <%= link_to "Ecrire un nouvel article", new_post_path(@post), class: "btn btn-success btn-lg" %>
     </div>
   </div>
 </header>
@@ -15,7 +16,6 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <%= link_to "Nouveau blog", new_post_path(@post), class: "btn btn-success btn-lg" %>
 
       <div class="post-preview">
         <a >
