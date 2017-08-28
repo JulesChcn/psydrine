@@ -4,6 +4,19 @@
 <h2>Bienvenue dans mon Blog!</h2>
      <%= link_to "New", new_post_path(@post), class: "btn btn-success" %>
    </div>
+   <div class="">
+    <!-- Login text link -->
+     <% if user_signed_in? %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+     <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Déconnexion") %>
+     <% end %>
+  <% else %>
+    <%= link_to t(".sign_in", default: "Se connecter"), user_session_path, class: "btn btn-info " %>
+    <% end   %>
+
+    <!-- Button (call-to-action) -->
+
+  </div>
    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
     <% @posts.each do |post| %>
     <div class="col-xs-12">
