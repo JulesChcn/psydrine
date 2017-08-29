@@ -1,5 +1,8 @@
 /* Main navbar */
 
+// .disappear{
+//   display: none;
+// }
 
 .title {
   float: left;
@@ -24,7 +27,7 @@
 }
 
 .navbar-kachinah:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 
 /* Logo */
