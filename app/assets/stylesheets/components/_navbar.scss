@@ -1,5 +1,6 @@
 /* Main navbar */
 
+
 .title {
   float: left;
   animation-delay: 2s;
@@ -40,18 +41,17 @@
 
 /* Right section */
 .navbar-kachinah-right {
-  // position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  right: 300px;
+  right: 220px;
+}
+.wesh-right {
+  position: relative;
+  left: 220px;
 }
 
-.menu-bars-right {
-  position: relative;
-  left: 300px;
-}
 
 /* Basic navbar item */
 .navbar-kachinah-item {
@@ -75,14 +75,12 @@
 /* Dropdown menu */
 
 .dropdown-menu {
-position: relative;
-right: 200px;
+
 }
 .dropdown-menu-right {
   width: 30vw;
   height: 58vh;
   position: relative;
-  left: 6vw;
 }
 
 .dropdown-menu-right {
@@ -139,25 +137,25 @@ right: 200px;
      bottom: 25px;
      padding: 20px;
    }
-   .banner-5 {
-    // background-color: $mauve;
+   // .banner-5 {
+   //  // background-color: $mauve;
 
-    /* if you have a 70px navbar => height: calc(100vh - 70px); */
-    background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.78) 20%, rgba(112, 115, 115, 0.7) 70%), url('blind.jpg');
-    background-size: cover !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-     //added effects for banner parallax
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 30vh;
-     position: relative;
-     top: -25px;
-   }
+   //  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+   //  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.78) 20%, rgba(112, 115, 115, 0.7) 70%), url('blind.jpg');
+   //  background-size: cover !important;
+   //  display: flex;
+   //  align-items: center;
+   //  justify-content: center;
+   //  background-position: center;
+   //   //added effects for banner parallax
+   //   background-attachment: fixed;
+   //   background-position: center;
+   //   background-repeat: no-repeat;
+   //   background-size: cover;
+   //   height: 30vh;
+   //   position: relative;
+   //   top: -25px;
+   // }
 
    * {
      margin: 0;
