@@ -17,14 +17,13 @@
   justify-content: space-between;
   position: fixed;
   width: 100vw;
-  opacity: 1;
   color: white;
   z-index: 5;
   opacity: 0;
 }
 
 .navbar-kachinah:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* Logo */
@@ -41,10 +40,17 @@
 
 /* Right section */
 .navbar-kachinah-right {
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  right: 300px;
+}
+
+.menu-bars-right {
+  position: relative;
+  left: 300px;
 }
 
 /* Basic navbar item */
@@ -74,7 +80,7 @@ right: 200px;
 }
 .dropdown-menu-right {
   width: 30vw;
-  height: 84vh;
+  height: 58vh;
   position: relative;
   left: 6vw;
 }
