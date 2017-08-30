@@ -380,7 +380,7 @@ bottom: 60px;
 
 .case-1 {
   position: relative;
-  right: 4%;
+  right: 2%;
   padding-top: 10px;
   height: 50vh;
   width: 50vw;
@@ -583,9 +583,12 @@ bottom: 60px;
 
 //** A BOUGER, VARIABLES BOOTSTRAP **//
 
+
+
 .why {
  background-color: $mauve;
  padding: 8px;
+ width: 100vw;
   min-height: 100vh;
   display: flex;
     align-items: center;
