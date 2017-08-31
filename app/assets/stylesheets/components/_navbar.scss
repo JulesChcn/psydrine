@@ -90,12 +90,14 @@
     right: 0;
     left: auto;
     right: -9vh;
+    background-color: transparent !important;
 }
 
 
 .navbar-kachinah-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
+  background-color: transparent !important;
   // border-color: #E6E6E6;
 }
 .navbar-kachinah-dropdown-menu li > a {
@@ -105,6 +107,7 @@
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
+  background-color: transparent !important;
 }
 // .navbar-kachinah-dropdown-menu li > a:hover {
 //   background: transparent !important;
@@ -126,7 +129,7 @@
 
 
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
-    background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('banner2.jpg');
+    background-color: rgba(50, 50, 50, 0.6);
     background-size: cover !important;
     // display: flex;
     // align-items: center;
