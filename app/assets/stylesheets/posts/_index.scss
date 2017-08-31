@@ -9,8 +9,13 @@
    border-radius: 4px;
     height: 31px;
     width: 200px;
-    background-color: $sable;
-    color: $mauve;
+    background-color: transparent;
+    color: white;
+    border: solid white 2px;
+}
+
+.input-case[placeholder] {
+    color: white !important;
 }
 
 .blog1 {
