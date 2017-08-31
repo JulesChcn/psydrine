@@ -1,3 +1,18 @@
+.research {
+  color: white !important;
+}
+.text_field_tag {
+  border-radius: 5px;
+}
+
+.input-case {
+   border-radius: 4px;
+    height: 31px;
+    width: 200px;
+    background-color: $sable;
+    color: $mauve;
+}
+
 .blog1 {
   background-color: transparent;
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.18) 20%, rgba(15, 21, 21, 0.42) 70%), image-url('blog1.jpg');
