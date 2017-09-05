@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    $("#nutrition").click(function () {
+$(document).ready(function boom () {
+    $("#nutrition").click(function() {
         $("#switchtitle").fadeOut(function () {
             $("#switchtitle").text(($("#switchtitle").text() == "Je m'appelle Sandrine") ? "Je m'appelle Sandrine" : 'Nutrition').fadeIn();
         })
@@ -33,4 +33,5 @@ $(document).ready(function () {
     });
   });
 
+    // setTimeout(boom, 20);
 
