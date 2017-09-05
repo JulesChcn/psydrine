@@ -726,16 +726,23 @@ h4:hover {
   position: relative;
 }
 
+.border-texte{
+}
 .texte-sandrine-alpha{
   position: absolute;
-  top: 25%;
+  top: 32%;
+
   color: white;
   opacity: 0.7;
   border: 1px solid #dbd3c9;
   /* max-width: 50%; */
   width: 40%;
+  min-height: 40%;
   left: 29%;
-  justify-content: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
   align-items: center;
   text-align: center;
   // min-height: 50%;
