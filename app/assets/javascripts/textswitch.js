@@ -4,7 +4,7 @@ $(document).ready(function () {
             $("#switchtitle").text(($("#switchtitle").text() == "Je m'appelle Sandrine") ? "Je m'appelle Sandrine" : 'Nutrition').fadeIn();
         })
         $("#switchparag").fadeOut(function () {
-            $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Nutrition test pour texte axe apprentissage" : 'Nutrition test pour texte axe apprentissage').fadeIn();
+            $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Nutrition test pour texte axe apprentissage" : "Nutrition test pour texte axe apprentissage").fadeIn();
         })
     });
     $("#relation").click(function () {
