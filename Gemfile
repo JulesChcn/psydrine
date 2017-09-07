@@ -9,6 +9,8 @@ gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
 
+#contact form
+gem 'mail_form'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
