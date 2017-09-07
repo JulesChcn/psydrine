@@ -1,13 +1,16 @@
 class ContactsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:new, :create, :index]
 
+  def index
+  end
+
   def new
     @contact = Contact.new
   end
-
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
+    redirect_to home_path
     if @contact.deliver
       flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
@@ -15,5 +18,4 @@ class ContactsController < ApplicationController
       render :new
     end
   end
-
 end
