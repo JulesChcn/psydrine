@@ -33,4 +33,11 @@ module Psydrine
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
+
+  #mailer postmarkt
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_token => "f05ea27a-e0fa-43be-bcfe-90c024e0d449"
+  }
+
+
 end
