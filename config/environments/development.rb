@@ -1,5 +1,8 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_key: ENV['f05ea27a-e0fa-43be-bcfe-90c024e0d449'] }
+  config.action_mailer.default_url_options = { host: "kachinahv0.herokuapp.com" }
+  # config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
