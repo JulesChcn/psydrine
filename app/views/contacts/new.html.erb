@@ -1,8 +1,5 @@
-<div class="banner-parallax-4">
-<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-2">
-
-  <h3>Envoyez-moi un premier message!</h3>
-
+<div align="center">
+  <h3>Send A message to Us</h3>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
@@ -13,10 +10,7 @@
     </div>
     <div>
       </br>
-      <%= f.button :submit, "Let's GO!", :class=> "btn btn-primary btn-lg" %>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
     </div>
   <% end %>
-
 </div>
-</div>
-
