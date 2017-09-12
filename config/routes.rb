@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'coaching', to: 'pages#coaching'
   get 'ebook', to: 'pages#ebook'
   get 'start_now', to: 'pages#start_now'
+  get 'about', to: 'pages#about'
   # get 'index', to: 'pages#index' #blog access
 
   root to: "posts#index"
