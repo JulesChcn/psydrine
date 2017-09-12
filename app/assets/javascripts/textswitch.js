@@ -47,5 +47,5 @@ $(document).ready(function boom () {
           $('#nutrition, #relation, #bodyhealth').removeClass("unblur");
           $("#selfesteem").addClass("unblur");
     });
+setTimeout(boom, 2000);
   });
-
