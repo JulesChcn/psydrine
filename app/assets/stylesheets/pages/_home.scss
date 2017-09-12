@@ -1,3 +1,14 @@
+// BLUR //
+.blur{
+  filter: blur(2px);
+  transition: 0.5s ease-in-out;
+}
+
+.unblur{
+  filter: blur(0px);
+  transition: 0.5s ease-in-out;
+}
+
 // MAIL //
 .alert-error {
 background-color: #f2dede;
