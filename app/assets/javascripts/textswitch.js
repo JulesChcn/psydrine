@@ -1,3 +1,5 @@
+
+
 $(document).ready(function boom () {
     $("#nutrition").click(function() {
         $("#switchtitle").fadeOut(function () {
@@ -47,5 +49,15 @@ $(document).ready(function boom () {
           $('#nutrition, #relation, #bodyhealth').removeClass("unblur");
           $("#selfesteem").addClass("unblur");
     });
-setTimeout(boom, 2000);
+    $("#avatar1").click(function () {
+        $("#switchtitle").fadeOut(function () {
+            $("#switchtitle").text(($("#switchtitle").text() == "Je m'appelle Sandrine") ? "Je m'appelle Sandrine" : "Je m'appelle Sandrine").fadeIn();
+        })
+        $("#switchparag").fadeOut(function () {
+            $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "J'ai suivi la formation de psychanalyste/psychothérapeute intégratif à la Nouvelle Faculté Libre à Paris. J'ai donc une approche dite Intégrative fondée sur la phénoménologie et l existentialisme une approche dite humaniste-existentielle. La thérapie que je propose consiste à consolider la capacité de chacun à exprimer ses difficultés, repérer ses blocages, ce qui nous empêche de vivre librement en trouvant ses propres solutions en développant des changements qui nous permettent de faire nos choix, vos choix." : 'Relation test pour texte axe apprentissage').fadeIn();
+        })
+       $("#nutrition, #relation, #bodyhealth, #selfesteem").addClass("blur");
+          $('#nutrition, #relation, #bodyhealth, #selfesteem').removeClass("unblur");
+    });
   });
+
