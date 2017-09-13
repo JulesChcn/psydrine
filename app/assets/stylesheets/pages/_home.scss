@@ -629,12 +629,21 @@ h4:hover {
 }
 }
 
-// .case:hover {
-//   opacity: 1;
-//   transition-delay: 0.3s;
-// }
+.avatar {
+background-image: image-url('crabe.jpg');
+background-size: cover !important;
+ height: 25%;
+ width: 25%;
+ border-radius: 50%;
+ position: absolute;
+ bottom: 90%;
+ opacity: 0.7;
+}
 
-
+.avatar:hover {
+  transition-delay: 0.2s;
+  opacity: 1;
+}
 
 
 #my-name-is {
@@ -975,3 +984,9 @@ body { font-family: sans-serif; }
     text-align: right;
     display: none;
 }
+
+
+
+
+
+
