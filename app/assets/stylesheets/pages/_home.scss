@@ -638,13 +638,13 @@ background-size: cover !important;
  position: absolute;
  bottom: 90%;
  left: 43%;
- filter: blur(2px);
+ // filter: blur(2px);
  cursor: pointer;
 }
 
 .avatar:hover {
   transition-delay: 0.2s;
-   filter: none;
+   // filter: none;
 }
 
 
