@@ -8,9 +8,9 @@ $(document).ready(function boom () {
         $("#switchparag").fadeOut(function () {
             $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Nutrition test pour texte axe apprentissage" : "Nutrition test pour texte axe apprentissage").fadeIn();
         })
-        $("#relation, #bodyhealth, #selfesteem").addClass("blur");
+        $("#relation, #bodyhealth, #selfesteem, #avatar1").addClass("blur");
           $("#nutrition").removeClass("blur");
-          $('#relation, #bodyhealth, #selfesteem').removeClass("unblur");
+          $('#relation, #bodyhealth, #selfesteem, #avatar1').removeClass("unblur");
           $("#nutrition").addClass("unblur");
         });
     $("#relation").click(function () {
@@ -20,9 +20,9 @@ $(document).ready(function boom () {
         $("#switchparag").fadeOut(function () {
             $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Relation test pour texte axe apprentissage" : 'Relation test pour texte axe apprentissage').fadeIn();
         })
-        $("#nutrition, #bodyhealth, #selfesteem").addClass("blur");
+        $("#nutrition, #bodyhealth, #selfesteem, #avatar1").addClass("blur");
           $("#relation").removeClass("blur");
-          $('#nutrition, #bodyhealth, #selfesteem').removeClass("unblur");
+          $('#nutrition, #bodyhealth, #selfesteem, #avatar1').removeClass("unblur");
           $("#relation").addClass("unblur");
         });
     $("#bodyhealth").click(function () {
@@ -32,9 +32,9 @@ $(document).ready(function boom () {
         $("#switchparag").fadeOut(function () {
             $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Bodyyyyyy test pour texte axe apprentissage" : 'Relation test pour texte axe apprentissage').fadeIn();
         })
-        $("#nutrition, #relation, #selfesteem").addClass("blur");
+        $("#nutrition, #relation, #selfesteem, #avatar1").addClass("blur");
           $("#bodyhealth").removeClass("blur");
-          $('#nutrition, #relation, #selfesteem').removeClass("unblur");
+          $('#nutrition, #relation, #selfesteem, #avatar1').removeClass("unblur");
           $("#bodyhealth").addClass("unblur");
     });
     $("#selfesteem").click(function () {
@@ -44,20 +44,22 @@ $(document).ready(function boom () {
         $("#switchparag").fadeOut(function () {
             $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "Self esteem test pour texte axe apprentissage" : 'Relation test pour texte axe apprentissage').fadeIn();
         })
-       $("#nutrition, #relation, #bodyhealth").addClass("blur");
+       $("#nutrition, #relation, #bodyhealth, #avatar1").addClass("blur");
           $("#selfesteem").removeClass("blur");
-          $('#nutrition, #relation, #bodyhealth').removeClass("unblur");
+          $('#nutrition, #relation, #bodyhealth, #avatar1').removeClass("unblur");
           $("#selfesteem").addClass("unblur");
     });
     $("#avatar1").click(function () {
         $("#switchtitle").fadeOut(function () {
-            $("#switchtitle").text(($("#switchtitle").text() == "Je m'appelle Sandrine") ? "Je m'appelle Sandrine" : "Je m'appelle Sandrine").fadeIn();
+            $("#switchtitle").text(($("#switchtitle").text() == "Je m'appelle Sandrine") ? "Je m'appelle Sandrine" : '"Je m appelle Sandrine"').fadeIn();
         })
         $("#switchparag").fadeOut(function () {
             $("#switchparag").text(($("#switchparag").text() != "Je m'appelle Sandrine") ? "J'ai suivi la formation de psychanalyste/psychothérapeute intégratif à la Nouvelle Faculté Libre à Paris. J'ai donc une approche dite Intégrative fondée sur la phénoménologie et l existentialisme une approche dite humaniste-existentielle. La thérapie que je propose consiste à consolider la capacité de chacun à exprimer ses difficultés, repérer ses blocages, ce qui nous empêche de vivre librement en trouvant ses propres solutions en développant des changements qui nous permettent de faire nos choix, vos choix." : 'Relation test pour texte axe apprentissage').fadeIn();
         })
        $("#nutrition, #relation, #bodyhealth, #selfesteem").addClass("blur");
+          $("#avatar1").removeClass("blur");
           $('#nutrition, #relation, #bodyhealth, #selfesteem').removeClass("unblur");
+          $("#avatar1").addClass("unblur");
     });
   });
 
