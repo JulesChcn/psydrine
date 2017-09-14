@@ -1,6 +1,6 @@
 // BLUR //
 .blur{
-  filter: blur(2px);
+  filter: blur(4px);
   transition: 0.5s ease-in-out;
 }
 
@@ -642,6 +642,7 @@ background-size: cover !important;
  left: 43%;
  // filter: blur(2px);
  cursor: pointer;
+ background-position: center;
 }
 
 .avatar:hover {
