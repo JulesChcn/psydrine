@@ -28,6 +28,7 @@
 
 .navbar-kachinah:hover {
   opacity: 0.8 !important;
+  background-color: $footer !important;
 }
 
 /* Logo */
@@ -82,8 +83,9 @@
 
 }
 .dropdown-menu-right {
-  width: 30vw;
-  height: 58vh;
+  background-color: $footer !important;
+  width: 15vw;
+  height: 38vh;
   position: relative;
 }
 
@@ -91,20 +93,20 @@
     right: 0;
     left: auto;
     right: -9vh;
-    background-color: transparent !important;
+    // background-color: transparent !important;
 }
 
 
 .navbar-kachinah-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
-  background-color: transparent !important;
+  // background-color: transparent !important;
   // border-color: #E6E6E6;
 }
 .navbar-kachinah-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
-  color: #999999 !important;
+  color: white !important;
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
