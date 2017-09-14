@@ -437,13 +437,15 @@ img:hover {
 .case-04 {
   background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('self-esteem.jpg');
 }
-
+.case-05 {
+  background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.28) 20%, rgba(12, 15, 15, 0.7) 70%), url('hair.jpg');
+}
 
 .case-1 {
   // position: relative;
   // right: 23px;
   padding-top: 10px;
-  height: 50vh;
+  min-height: 50vh;
   // width: 50vw;
   background-color: #b98ea7;
   color: white;
@@ -632,8 +634,8 @@ h4:hover {
 .avatar {
 background-image: image-url('crabe.jpg');
 background-size: cover !important;
- height: 25%;
- width: 16%;
+ height: 80px;
+ width: 80px;
  border-radius: 50%;
  position: absolute;
  bottom: 90%;
@@ -645,6 +647,11 @@ background-size: cover !important;
 .avatar:hover {
   transition-delay: 0.2s;
    // filter: none;
+}
+
+.depad {
+  padding-left: -15px !important;
+  padding-right: -15px !important;
 }
 
 
@@ -885,6 +892,7 @@ body { font-family: sans-serif; }
 .carousel-cell {
   width: 70%;
   height: 60%;
+  min-height: 300px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
@@ -930,6 +938,9 @@ body { font-family: sans-serif; }
   .carousel-cell {
     width: 60%;
   }
+}
+.flickity-viewport {
+  min-height: 180px;
 }
 
 /* buttons, no circle */
