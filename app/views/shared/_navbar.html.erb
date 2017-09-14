@@ -4,8 +4,8 @@
   <!-- </div> -->
 
 <div id="disapp" class="navbar-kachinah hidden-sm hidden-xs">
-
 <!-- Logo -->
+<div class="logos">
 <%= link_to root_path, class: "navbar-kachinah-brand navbar-kachinah-item" do %>
     <%= image_tag "logo1.png" %>
     <% end %>
@@ -14,14 +14,10 @@
       <% "Sandrine Loiret" %>
     <% end %> -->
 </strong>
-
-
+</div>
 
     <!-- Right Navigation -->
     <div class="navbar-kachinah-right hidden-xs hidden-sm">
-
-
-
       <!-- Links when logged in -->
        <%= link_to "About", about_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
       <%= link_to "Contactez-moi", new_contact_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
@@ -39,41 +35,101 @@
         <div class="dropdown">
           <i class="fa fa-bars fa-2x dropdown-toggle allo-right" data-toggle="dropdown"></i>
           <div class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu">
-            <div class="banner-4">
-            <div class="col-xs-12 text-center">
-             <h3>Step-by-step course</h3>
-             </div>
 
-             <div class="row text-center">
+            <div class="col-xs-12">
+             <div class="" style="flex-direction: column;">
+              <li class=""><h5 class=""><i class="fa fa-boo" aria-hidden="true"> </i> &nbsp  Take lessons</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-file-text-" aria-hidden="true"></i>&nbsp Dowload courses</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-envelope-" aria-hidden="true"></i>&nbsp Contactez-moi</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-info-circl" aria-hidden="true"></i>&nbsp Infos supp</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-file-text-" aria-hidden="true"></i>&nbsp Dowload courses</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-envelope-" aria-hidden="true"></i>&nbsp Contactez-moi</h5></li>
+              <li class=""><h5 class=""><i class="fa fa-info-circl" aria-hidden="true"></i>&nbsp Infos supp</h5></li>
 
-
-              <div class="col-md-6"><h4 class="text-center">Take lessons</h4><i class="fa fa-book fa-2x" aria-hidden="true"> </i></div>
-              <div class="col-md-6"><h4 class="text-center">Dowload courses</h4><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-6"><h4 class="text-center">Contactez-moi</h4><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-6"><h4 class="text-center">Infos supp</h4><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-6"><h4 class="text-center">Take lessons</h4><i class="fa fa-book fa-2x" aria-hidden="true"> </i></div>
-              <div class="col-md-6"><h4 class="text-center">Dowload courses</h4><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-6"><h4 class="text-center">Contactez-moi</h4><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-6"><h4 class="text-center">Infos supp</h4><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
             </div>
-          </div>
+         </div>
         </div>
       </div>
     </div>
 
 
   </div>
-
+</div>
+</div>
+<div class="navbar-kachinah hidden-sm hidden-md hidden-lg" style="opacity: 1; position: fixed;left: 75vw;">
+<div class="logo-left" style="position: fixed; left: 10px;">
+  <%= link_to root_path, class: "navbar-kachinah-brand navbar-kachinah-item" do %>
+    <%= image_tag "logo1.png" %>
+    <% end %>
+</div>
   <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-kachinah-item hidden-md hidden-lg">
+  <div class="navbar-kachinah-item  mbars-right ">
     <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <i class="fa fa-bars fa-3x dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+      <li>
+      <%= link_to "About", about_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Contactez-moi", new_contact_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Coaching", coaching_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "e-book", ebook_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Blog", 'https://websize.me', class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+
+      </li>
       </ul>
+
     </div>
   </div>
 </div>
+<div class="navbar-kachinah hidden-xs hidden-md hidden-lg" style="opacity: 1; position: fixed;left: 85vw;">
+<div class="logo-left" style="position: fixed; left: 10px;">
+  <%= link_to root_path, class: "navbar-kachinah-brand navbar-kachinah-item" do %>
+    <%= image_tag "logo1.png" %>
+    <% end %>
+</div>
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-kachinah-item  mbars-right ">
+    <div class="dropdown">
+      <i class="fa fa-bars fa-2x dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu">
+      <li>
+      <%= link_to "About", about_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Contactez-moi", new_contact_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Coaching", coaching_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "e-book", ebook_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+      <%= link_to "Blog", 'https://websize.me', class: "navbar-kachinah-item navbar-kachinah-link" %>
+
+      </li>
+      <li>
+
+      </li>
+      </ul>
+    </div>
+  </div>
 </div>
