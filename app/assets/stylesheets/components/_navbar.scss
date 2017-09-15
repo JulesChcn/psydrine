@@ -103,13 +103,13 @@
     height: 2px;
     width: 0px;
     background: transparent;
-    transition: width 0.5s ease, background-color 0.5s ease;
-    // margin: 200px;
-}
-.navbar-kachinah-link:hover:after {
+    transition: width 0.8s ease, background-color 0.5s ease;
+    margin: auto;
     content: '';
     position: relative;
     top: -40px;
+}
+.navbar-kachinah-link:hover:after {
     width: 100%;
     background: $bleu;
 }
