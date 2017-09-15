@@ -15,7 +15,7 @@
   background: transparent;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  padding: 45px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,11 +24,13 @@
   color: white;
   z-index: 5;
   opacity: 0;
+
 }
 
 .navbar-kachinah:hover {
   opacity: 0.8 !important;
-  background-color: $footer !important;
+  // background-color: $footer !important;
+  background-color: #666 !important;
 }
 
 /* Logo */
@@ -50,11 +52,11 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  right: 220px;
+  right: 10%;
 }
 .wesh-right {
   position: relative;
-  left: 220px;
+  left: 18%;
 }
 
 
@@ -62,7 +64,17 @@
 .navbar-kachinah-item {
   cursor: pointer;
   padding: 0 20px;
+    font-family: 'Fira Sans', 'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+        line-height: 107px;
 }
+
+.navbar-kachinah-item {
+}
+
 .dropdown-toggle {
   position: relative;
 }
@@ -70,12 +82,38 @@
 /* Navbar link */
 .navbar-kachinah-link {
   color: white;
-  font-size: 18px;
-}
-.navbar-kachinah-link:hover {
-  color: #da552f;
+  // font-size: 18px;
   text-decoration: none;
 }
+.navbar-kachinah-link:hover {
+   // transition: all 0.9s ease-out;
+  color: $bleu;
+   text-decoration: none;
+}
+
+
+//soulignement apparaissant du centre
+.navbar-kachinah-link {
+    display: inline-block;
+    position: relative;
+    // padding-bottom: 3px;
+}
+.navbar-kachinah-link:after {
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+    // margin: 200px;
+}
+.navbar-kachinah-link:hover:after {
+    content: '';
+    position: relative;
+    top: -40px;
+    width: 100%;
+    background: $bleu;
+}
+
 
 /* Dropdown menu */
 
