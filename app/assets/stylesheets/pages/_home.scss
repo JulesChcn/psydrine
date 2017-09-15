@@ -810,6 +810,14 @@ background-size: cover !important;
   position: relative;
 }
 
+.importz{
+  background-color: #4e4a59 !important;
+}
+
+.importz:hover{
+  background-color: #8f8b99 !important;
+}
+
 .border-texte{
 }
 .texte-sandrine-alpha{
@@ -819,7 +827,7 @@ background-size: cover !important;
 
   color: white;
   opacity: 0.7;
-  border: 1px solid #dbd3c9;
+  border: solid 1px #dbb1bc;
   /* max-width: 50%; */
   width: 40%;
   min-height: 40%;
@@ -862,6 +870,7 @@ background-size: cover !important;
 
   .subscribe-btn {
     font-family: $body-font;
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
@@ -873,9 +882,11 @@ background-size: cover !important;
     margin: 10px;
     border: 2px solid #fff;
     color: #fff;
+    background-color: #b98ea7;
     &:hover {
-      background: $mauve;
+      background: #4e4a59;
       border: 2px solid $mauve;
+      text-decoration: none;
     }
   }
 }
