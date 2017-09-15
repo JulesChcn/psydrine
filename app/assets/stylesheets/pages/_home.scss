@@ -996,8 +996,24 @@ background-size: cover !important;
 .banner-pellicule {
   position: relative;
   background: linear-gradient(-225deg, rgba(187, 175, 199, 0.49) 20%, rgba(15, 12, 15, 0.05) 50%), image-url('pellicule.png');
-  height: 62vh;
-  background-size: 45%;
+  height: 10vh;
+  background-size: 10%;
+  // background-repeat: no-repeat;
+
+
+    padding-top: 7.5vh;
+
+  //   padding-right: 30px;
+  //   padding-left: 30px;
+  //   z-index: -1;
+   // justify-content: center;
+  background-position: center;
+}
+  .banner-pellicule-xs {
+  position: relative;
+  background: linear-gradient(-225deg, rgba(187, 175, 199, 0.49) 20%, rgba(15, 12, 15, 0.05) 50%), image-url('pellicule.png');
+  height: 10vh;
+  background-size: 30%;
   // background-repeat: no-repeat;
 
 
@@ -1009,7 +1025,6 @@ background-size: cover !important;
    // justify-content: center;
   background-position: center;
   }
-
 // contact-form /contact/new
 .form-horizontal {
    #contact_message {
