@@ -1,8 +1,12 @@
-$("body").mousemove(function() {
-    $("#disapp").css( "opacity", "0.8");
-    setTimeout(function(){
-      $("#disapp").css( "opacity", "0");
-    }, 1000);
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+$("body").mousemove(function(e) {
+ if(!isMobile) {
+  $("#disapp").css( "opacity", "0.8");
+  setTimeout(function(e){
+    $("#disapp").css( "opacity", "0");
+  }, 1000);
+}
 });
 
 // var disapp = document.getElementById('disapp');
