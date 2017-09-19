@@ -27,15 +27,16 @@
 
 
       <!-- Login link (when logged out) -->
-      <!--      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-kachinah-item navbar-kachinah-link" %> -->
+
 
       <!-- Avatar with dropdown menu -->
 
       <div class="navbar-kachinah-item wesh-right">
         <div class="dropdown" data-toggle="dropdown-toggle">
           <i class="fa fa-bars fa-2x dropdown-toggle allo-right" data-toggle="dropdown"></i>
-          <div class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu" style="left: -350%;">
+          <div class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu" style="left: -500%; top: -5%">
             <div class="col-xs-12">
+            <i class="fa fa-times fa-2x" aria-hidden="true" style="position: fixed; top: 25px; right: 4.5vw;" ></i>
              <div class="" style="flex-direction: column;">
               <li class=""><h5 class=""><i class="fa fa-boo" aria-hidden="true"> </i> &nbsp  Take lessons</h5></li>
               <li class=""><h5 class=""><i style:"color: white;" class="fa fa-file-text-" aria-hidden="true"></i>&nbsp Dowload courses</h5></li>
@@ -52,7 +53,7 @@
   </div>
 </div>
 </div>
-<div class="navbar-kachinah hidden-sm hidden-md hidden-lg" style="opacity: 1; position: fixed;left: 75vw;">
+<div class="navbar-kachinah hidden-sm hidden-md hidden-lg" style="opacity: 1; position: fixed;left: 70vw; width: 40vw;">
 <div class="logo-left" style="position: fixed; left: 10px;">
   <%= link_to root_path, class: "navbar-kachinah-brand navbar-kachinah-item" do %>
     <%= image_tag "logo1.png" %>
@@ -103,7 +104,8 @@
   <div class="navbar-kachinah-item  mbars-right ">
     <div class="dropdown">
       <i class="fa fa-bars fa-2x dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu">
+      <ul class="dropdown-menu dropdown-menu-right navbar-kachinah-dropdown-menu" style=" right: -6.5vw; top: 0vh; height: 85vh;">
+      <i class="fa fa-times fa-2x" aria-hidden="true" style="position: fixed; top: 25px; right: 6.5vw;" ></i>
       <li>
       <%= link_to "About", about_path, class: "navbar-kachinah-item navbar-kachinah-link" %>
 
