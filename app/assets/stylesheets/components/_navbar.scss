@@ -67,9 +67,9 @@
     font-family: 'Fira Sans', 'sans-serif';
     font-weight: 400;
     font-style: normal;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.25em;
-        line-height: 107px;
+        line-height: 80px;
 }
 
 .navbar-kachinah-item {
@@ -107,7 +107,7 @@
     margin: auto;
     content: '';
     position: relative;
-    top: -40px;
+    top: -30px;
 }
 .navbar-kachinah-link:hover:after {
     width: 100%;
@@ -117,22 +117,32 @@
 
 /* Dropdown menu */
 
+.fa-bars:hover {
+  // height: 60px !important;
+  // width: 20px !important;
+  transform: rotate(90deg);
+  opacity: 1;
+  content: 'sss';
+}
+
+.fa-times:hover {
+  // height: 60px !important;
+  // width: 20px !important;
+  // transform: rotate(45deg);
+}
 .dropdown-menu {
 
 }
 .dropdown-menu-right {
   background-color: #666 !important;
-  width: 20vw;
-  height: 85vh;
-  position: relative;
-  left: auto;
-  right: -9vh;
+  width: 25vw;
+  height: 80vh;
 }
 
 
 .navbar-kachinah-dropdown-menu {
   margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
+  // box-shadow: 1px 1px 4px #E6E6E6;
   // background-color: transparent !important;
   // border-color: #E6E6E6;
 }
@@ -157,8 +167,8 @@
   position: relative;
   top: -6px;
   transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  border-left: 1px solid #666;
+  border-top: 1px solid #666;
 }
 
 
