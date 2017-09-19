@@ -118,7 +118,7 @@ body {
     background-image: linear-gradient(-225deg, rgba(211, 193, 228, 0.18) 20%, rgba(73, 90, 90, 0.55) 70%), image-url('welcome.jpg');    background-size: cover !important;
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     background-position: center;
      //added effects for banner parallax
      background-attachment: fixed;
@@ -128,6 +128,29 @@ body {
      height: 100vh;
 
    }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.fa-angle-double-down:hover {
+  animation: bounce 1s;
+}
+
+
+
    .banner-parallax-2 {
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-image: linear-gradient(-225deg, rgba(145, 136, 154, 0.8) 20%, rgba(15, 15, 15, 0.7) 70%), image-url('crabe.jpg');
@@ -264,6 +287,17 @@ img:hover {
   padding-bottom: 45px;
   color: white;
   position: relative;
+  font-family: "Dancing Script";
+
+    h3 {
+      font-size: 34px;
+    }
+    h5 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 24px;
+    }
 
   // background-color: white;
   // border-radius: 10px;
